@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+
+{% block title %}
+    delete  post
+
+{% endblock title %}
+
+{% block content %}
+    {% if messages %}
+        {% for message in messages %}
+            {% if "warning in messages.tags" %}
+                <div class="header">
+                {{ message }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif%}
+
+    {% if not messages %}
+        <div class="ui segment">
+            <h3>Delete post?</h3>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    {% endif %}
+{% endblock content %}
+
+</body>
+</html>

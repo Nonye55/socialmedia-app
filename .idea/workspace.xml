@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4eadfa6b-ba42-407e-be8e-4e30e8d53e0a" name="Default Changelist" comment="" />
+    <list default="true" id="4eadfa6b-ba42-407e-be8e-4e30e8d53e0a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/socialnetwork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/socialnetwork.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/templates/profiles/myprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/profiles/myprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialnetwork/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/socialnetwork/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialnetwork/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/socialnetwork/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialnetwork/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/socialnetwork/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_project/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_project/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_project/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_project/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/navbar.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -13,29 +57,39 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1g8hncokFRb1LusAhtt8UjUHJCM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../voteapp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\MydjangoSite\socialnetwork\posts\templates\posts" />
+      <recent name="C:\Users\user\MydjangoSite\socialnetwork\profiles" />
       <recent name="C:\Users\user\MydjangoSite\socialnetwork\talk2talk\templates" />
     </key>
   </component>
@@ -77,12 +131,16 @@
       <workItem from="1597502313437" duration="13170000" />
       <workItem from="1597585869030" duration="31926000" />
       <workItem from="1597679119154" duration="3964000" />
-      <workItem from="1597734733456" duration="19514000" />
+      <workItem from="1597734733456" duration="116194000" />
+      <workItem from="1598032947583" duration="14273000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="725" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597679148888">
@@ -93,17 +151,29 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="867" y="195" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1597505833043" />
-    <state x="869" y="69" key="FileChooserDialogImpl" timestamp="1597620208953">
+    <state x="801" y="53" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597975198245">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="869" y="69" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1597620208953" />
+    <state x="801" y="53" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1597975198245" />
+    <state x="933" y="279" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1598008775660">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="933" y="279" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1600.860@0.0.1600.860" timestamp="1598008775660" />
+    <state x="869" y="69" key="FileChooserDialogImpl" timestamp="1597861755474">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="869" y="69" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1597861755474" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1597502380752">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1597502380752" />
-    <state x="692" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1597734737224">
+    <state x="692" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1598032950578">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="692" y="195" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1597734737224" />
+    <state x="692" y="195" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1598032950578" />
+    <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1597978007488">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1597978007488" />
   </component>
 </project>

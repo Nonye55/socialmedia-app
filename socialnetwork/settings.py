@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['talk2talk.com', 'localhost', '127.0.0.1']
 # Application definitio
 
 INSTALLED_APPS = [
-    'account.apps.Talk2TalkConfig',
+    # 'account.apps.Talk2TalkConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'django_extensions',
+
+    'posts',
+    'profiles',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +58,7 @@ ROOT_URLCONF = 'socialnetwork.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,26 +119,32 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = 'dashboard'
-LOGIN_URL = 'login'
-LOGOUT_URL = 'logout'
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-
-AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'account.authentication.EmailAuthBackend',
-    'social_core.backends.facebook.FacebookOAuth2',
-    'social_core.backends.google.GoogleOAuth2',
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static_project')
 ]
 
-SOCIAL_AUTH_FACEBOOK_KEY = '310314493530262'  # Facebook App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '49c30c2689266377af18e459fe81449f'  # Facebook App Secret
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "static_root")
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '327685351216-se62914qhq097lapa1ja2qe321rb9ro4.apps.googleusercontent.com'  # Google Consumer Key
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '6jt6fsWhcKrZ_quqJZ-GoZmM'  # Google Consumer Secret
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media_root")
+#
+# LOGIN_REDIRECT_URL = 'dashboard'
+# LOGIN_URL = 'login'
+# LOGOUT_URL = 'logout'
+#
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#
+# AUTHENTICATION_BACKENDS = [
+#     'django.contrib.auth.backends.ModelBackend',
+#     # 'account.authentication.EmailAuthBackend',
+#     'social_core.backends.facebook.FacebookOAuth2',
+#     'social_core.backends.google.GoogleOAuth2',
+
+# ]
+#
+# SOCIAL_AUTH_FACEBOOK_KEY = '310314493530262'  # Facebook App ID
+# SOCIAL_AUTH_FACEBOOK_SECRET = '49c30c2689266377af18e459fe81449f'  # Facebook App Secret
+# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+#
+# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '327685351216-se62914qhq097lapa1ja2qe321rb9ro4.apps.googleusercontent.com'  # Google Consumer Key
+# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '6jt6fsWhcKrZ_quqJZ-GoZmM'  # Google Consumer Secret

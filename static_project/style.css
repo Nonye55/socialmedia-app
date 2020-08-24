@@ -1,0 +1,23 @@
+    body{
+        background-color: #a0a2aa !important;
+    }
+
+    .nav{
+        border-right: 0px !important;
+        padding: 10px 0 10px !important;
+        background-color: #2d7d99 !important;
+    }
+
+    .nb-7{
+        margin-bottom: 7px !important;
+    }
+
+    .nt-5{
+        margin-top: 5px !important;
+    }
+
+    .mymodal{
+        height: 300px !important ;
+        top:200px !important;
+        font-size: 20px !important;
+    }

@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+{% extends 'base.html' %}
+
+{% block title %}
+    home
+
+{% endblock title %}
+
+{% block content %}
+    {{ hello }}
+        <br>
+    {{ user }}
+{% endblock content %}
+
+{% block  scripts %}
+    <script>
+  $(document).ready(function () {
+      console.log("working")
+
+  })
+
+    </script>
+{% endblock scripts %}
 </body>
 </html>
