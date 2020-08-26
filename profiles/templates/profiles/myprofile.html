@@ -5,83 +5,89 @@
 {% endblock title %}
 
 {% block content %}
+ <div style="height: 100px; width: 800px; margin: 1em auto;">
+    <form>
+          <div class="ui segment">
+        {#        {% if confirm %}#}
+        {#             <div class="ui olive message">Your profile has been updated</div>#}
+        {#         {% endif %}#}
+                <h3>my profile:{{ request.user }}</h3>
+                    <div class="ui grid">
+                      <div class="row">
+                            <div class="six wide column">
+                                 <img class="ui medium rounded image" src="{{ profile.avatar.url }}">
+                                <span>
+                                    <button class="ui secondary button" id="modal-btn"><a href="{% url "profiles:my_profile_update_view" %}">Update your profile</a></button>
+                                </span>
+                            </div>
 
-  <div class="ui segment">
-{#        {% if confirm %}#}
-{#             <div class="ui olive message">Your profile has been updated</div>#}
-{#         {% endif %}#}
-        <h3>my profile:{{ request.user }}</h3>
-            <div class="ui grid">
-              <div class="row">
-                    <div class="six wide column">
-                         <img class="ui medium rounded image" src="{{ profile.avatar.url }}">
-                        <span>
-                            <button class="ui secondary button" id="modal-btn"><a href="{% url "profiles:my_profile_update_view" %}">Update your profile</a></button>
-                        </span>
-                    </div>
-                <div class="ten wide column">
-                    <table class="ui table">
-                       <tbody>
-                       <tr>
-                           <td>username</td>
-                           <td>{{ profile.user }}</td>
-                       </tr>
-                      <tr>
-                           <td>first name</td>
-                           <td>{{ profile.first_name }}</td>
-                       </tr>
-                        <tr>
-                           <td>last name</td>
-                           <td>{{ profile.first_name }}</td>
-                       </tr>
-                        <tr>
-                           <td>gender</td>
-                           <td>{{ profile.gender}}</td>
-                       </tr>
-                        <tr>
-                           <td>moble No</td>
-                           <td>{{ profile.get_phone_no }}</td>
-                       </tr>
-                        <tr>
-                           <td>country</td>
-                           <td>{{ profile.country}}</td>
-                       </tr>
-                        <tr>
-                           <td>bio</td>
-                           <td>{{ profile.bio }}</td>
-                       </tr>
-                       <tr>
-                           <td>number of friends</td>
-                           <td>{{ profile.get_friends_no }}</td>
-                       </tr>
-                       <tr>
-                           <td>number of friends</td>
-                           <td>
-                               <ul>
-                                   {% for friend in profile.get_friends %}
-                                   <li>{{ friend }}</li>
+                                <div class="ten wide column">
+                                    <table class="ui table">
+                                       <tbody>
+                                       <tr>
+                                           <td>username</td>
+                                           <td>{{ profile.user }}</td>
+                                       </tr>
+                                      <tr>
+                                           <td>first name</td>
+                                           <td>{{ profile.first_name }}</td>
+                                       </tr>
+                                        <tr>
+                                           <td>last name</td>
+                                           <td>{{ profile.first_name }}</td>
+                                       </tr>
+                                        <tr>
+                                           <td>gender</td>
+                                           <td>{{ profile.gender}}</td>
+                                       </tr>
+                                        <tr>
+                                           <td>moble No</td>
+                                           <td>{{ profile.get_phone_no }}</td>
+                                       </tr>
+                                        <tr>
+                                           <td>country</td>
+                                           <td>{{ profile.country}}</td>
+                                       </tr>
+                                        <tr>
+                                           <td>bio</td>
+                                           <td>{{ profile.bio }}</td>
+                                       </tr>
+                                       <tr>
+                                           <td>number of friends</td>
+                                           <td>{{ profile.get_friends_no }}</td>
+                                       </tr>
+                                       <tr>
+                                           <td>number of friends</td>
+                                           <td>
+                                               <ul>
+                                                   {% for friend in profile.get_friends %}
+                                                   <li>{{ friend }}</li>
 
-                                   {% endfor %}
-                               </ul>
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>Number of posts </td>
-                           <td>{{ profile.get_posts_no}}</td>
-                       </tr>
-                      <tr>
-                          <td>Number of likes given </td>
-                          <td>{{ profile.get_likes_given_no}}</td>
-                      </tr>
-                       <tr>
-                           <td>Number of likes received  </td>
-                           <td>{{ profile.get_likes_received_no}}</td>
-                       </tr>
-                       </tbody>
-                    </table>
+                                                   {% endfor %}
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>Number of posts </td>
+                                           <td>{{ profile.get_posts_no}}</td>
+                                       </tr>
+                                      <tr>
+                                          <td>Number of likes given </td>
+                                          <td>{{ profile.get_likes_given_no}}</td>
+                                      </tr>
+                                       <tr>
+                                           <td>Number of likes received  </td>
+                                           <td>{{ profile.get_likes_received_no}}</td>
+                                       </tr>
+                                       </tbody>
+                                    </table>
+                                </div>
+
+                      </div>
+                     </div>
                 </div>
-             </div>
-            </div>
+         </div>
+    </form>
  </div>
 {% endblock content %}
 
