@@ -4,12 +4,12 @@ from django.shortcuts import render
 
 def home_view(request):
     user = request.user
-    hello = 'Hello world'
+    welcome = 'welcome'
 
     context = {
         'user': user,
-        'hello': hello,
+        'welcome': welcome,
     }
 
-    return render(request,'main/home.html', context)
+    return render(request, 'main/home.html', context)
     # return HttpResponse('Hello world')

@@ -1,11 +1,12 @@
     body{
-        background-color: #a0a2aa !important;
+        background-color: #7fb4fc !important;
+        color: black!important;
     }
 
     .nav{
         border-right: 0px !important;
         padding: 10px 0 10px !important;
-        background-color: #2d7d99 !important;
+        background-color: #658499 !important;
     }
 
     .nb-7{
@@ -21,3 +22,20 @@
         top:200px !important;
         font-size: 20px !important;
     }
+    .nb-5{
+        margin-bottom: 5px !important;
+
+    }
+
+    .bwhite-lg{
+        background-color: transparent;
+    }
+    .bwhite-sm{
+        background-color:transparent !important;
+        width: 10px !important;
+
+    }
+    .comment-box{
+        display: none !important;
+    }
+

@@ -24,22 +24,12 @@ urlpatterns = [
     path('', home_view, name='home-view'),
     path('profiles/', include('profiles.urls', namespace='profiles')),
     path('posts/', include('posts.urls', namespace='posts')),
+    path('account/', include('account.urls')),
+    path('social-auth/',
+         include('social_django.urls', namespace='social')),
 
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-
-#     path('account/', include('account.urls')),
-#     path('social-auth/',
-#          include('social_django.urls', namespace='social')),
-#
-#     path('users/', include('account.urls', namespace='users')),
-#     path('account/', include('allauth.url')),
-#
-# ]
-#
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL,
-#                           document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

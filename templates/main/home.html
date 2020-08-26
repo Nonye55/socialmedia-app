@@ -9,23 +9,26 @@
 
 {% block title %}
     home
-
 {% endblock title %}
 
 {% block content %}
-    {{ hello }}
-        <br>
+    {{ welcome }}
+        &nbsp;
     {{ user }}
+    <br/>
+    <a href="{% url "password_change" %}"> click here change your password </a>
+
 {% endblock content %}
+
+
+</body>
 
 {% block  scripts %}
     <script>
   $(document).ready(function () {
       console.log("working")
-
   })
-
     </script>
 {% endblock scripts %}
-</body>
+
 </html>

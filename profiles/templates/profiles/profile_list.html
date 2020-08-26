@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+{% extends 'base.html' %}
+
+{% block title %}
+all porfiles
+{% endblock title %}
+
+{% block content %}
+<ul>
+    {% for item in qs %}
+    <li>{{ item }}</li>
+    {% endfor %}
+   </ul>
+{% endblock content %}
+
 </body>
 </html>
