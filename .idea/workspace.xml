@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eadfa6b-ba42-407e-be8e-4e30e8d53e0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/posts/migrations/0004_remove_post_liked.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/posts/migrations/0005_post_liked.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles/migrations/0003_delete_profilemanager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles/templates/profiles/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/templates/posts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/posts/templates/posts/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/procfile" beforeDir="false" afterPath="$PROJECT_DIR$/procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/profiles/my-invites.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/profiles/my-invites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/profiles/myprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/profiles/myprofile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/profiles/profile_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/profiles/profile_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialnetwork/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/socialnetwork/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_project/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_project/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +121,7 @@
       <workItem from="1598032947583" duration="70979000" />
       <workItem from="1598223301745" duration="20623000" />
       <workItem from="1598287394010" duration="49840000" />
-      <workItem from="1598612270540" duration="52542000" />
+      <workItem from="1598612270540" duration="53225000" />
     </task>
     <servers />
   </component>
@@ -204,10 +185,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1597502380752" />
-    <state x="692" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1598624697122">
+    <state x="692" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1598859641319">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="692" y="195" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1598624697122" />
+    <state x="692" y="195" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1598859641319" />
     <state x="615" y="32" width="920" height="828" key="find.popup" timestamp="1598266905599">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
