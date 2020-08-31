@@ -47,7 +47,7 @@ def post_comment_create_and_list_view(request):
         'profile': profile,
         'p_form': p_form,
         'c_form': c_form,
-        'post_added': post_added,
+        'Post_added': post_added,
 
     }
     return render(request, 'posts/main.html', context)
@@ -60,13 +60,10 @@ def like_unlike_post(request):
         post_obj = Post.objects.get(id=post_id)
         profile = Profile.objects.get(user=user)
 
-        if profile in post_obj.liked.all():
-            post_obj.liked.remove(profile)
-        else:
+        if profile not in post_obj.liked.all():
             post_obj.liked.add(profile)
 
         like, created = Like.objects.get_or_create(user=profile, post_id=post_id)
-
         if not created:
             if like.value == 'Like':
                 like.value = 'Unlike'
@@ -74,9 +71,8 @@ def like_unlike_post(request):
                 like.value = 'Like'
         else:
             like.value = 'Like'
-
-            post_obj.save()
-            like.save()
+        like.save()
+        post_obj.save()
     return redirect('posts:main-post-view')
 
 

@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+# import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -24,7 +25,9 @@ SECRET_KEY = '5+fs)y*+(17-*cosh%c8911wp)oh##k*=*-16j9q*x@xer2aqr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['talk2talk.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['talk2talk.com', 'localhost', '127.0.0.1'
+                 'talk2talk.herokuapp.com'
+                 ]
 
 # Application definitio
 
@@ -149,3 +152,5 @@ SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '327685351216-se62914qhq097lapa1ja2qe321rb9ro4.apps.googleusercontent.com'  # Google
 # Consumer Key
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '6jt6fsWhcKrZ_quqJZ-GoZmM'  # Google Consumer Secret
+
+# django_heroku.settings(locals())

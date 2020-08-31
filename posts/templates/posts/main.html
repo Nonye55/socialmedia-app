@@ -13,10 +13,8 @@
                 <div class="ui grid">
                     <div class="row">
                         {% ifequal request.user obj.author.user %}
-                            <a href="{% url 'posts:post-update' obj.pk %}"><button type="button" class="btn btn-secondary btn-sm">
-                                Update</button></a>
-                            <a href="{% url 'posts:post-delete' obj.pk %}"><button type="button" class="btn btn-secondary btn-sm">
-                                Delete</button></a>
+                            <a href="{% url 'posts:post-update' obj.pk %}"><button class="ui button bwhite-lg">Update</button></a>
+                            <a href="{% url 'posts:post-delete' obj.pk %}"><button class="ui button bwhite-lg">Delete</button></a>
                         {% endifequal %}
                     </div>
                 </div>
@@ -52,18 +50,20 @@
             </div>
             <div class="extra content">
                 <div class="mb-5">
+                    
                 </div>
                 <button class="cmt_btn ui button mb-5">show/hide comments</button>
                 <div class="comment-box">
                 {% if obj.comment_set.all %}
                     {% for c in obj.comment_set.all %}
-                    
+
+
                         <div class="ui segment mb-5">
-                            <img class="ui avatar image" src={{c.user.avatar.url}}>
+                            <img class="ui avatar image" src={{c.user.avatar.url}} alt="">
                             <span>{{ c.user }}</span>
                             <div class='mt-5'>{{ c.body }}</div>
                         </div>
-                    
+
                     {% endfor %}
                 {% endif %}
                 </div>
@@ -98,8 +98,8 @@
 {% block scripts %} 
     <script>
         $( document ).ready(function() {
-            let display = false
-            $(".cmt_btn").click(function () {
+            let display = false;
+            $(".cmt_btn" ).click(function () {
                 if (display===false) {
                     $(this).next(".comment-box").show("slow");
                     display=true

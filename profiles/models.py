@@ -7,30 +7,29 @@ from django.db.models import Q
 
 # Create your models here.
 
-class ProfileManager(models.Model):
+class ProfileManager(models.Manager):
 
-    def get_all_profiles_invites(self, sender):
+    def get_all_profiles_to_invite(self, sender):
+        print(Profile.objects.all())
         profiles = Profile.objects.all().exclude(user=sender)
         profile = Profile.objects.get(user=sender)
         qs = Relationship.objects.filter(Q(sender=profile) | Q(receiver=profile))
+        print(qs)
 
-        accepted = []
+        accepted = set([])
         for rel in qs:
             if not rel.status == 'accepted':
-                accepted.append(rel.receiver)
-                accepted.append(rel.sender)
+                accepted.add(rel.receiver)
+                accepted.add(rel.sender)
         print(accepted)
 
-        avaliable = [profile for profile in profiles if profile not in accepted]
-        print(avaliable)
-        return avaliable
+        available = [profile for profile in profiles if profile not in accepted]
+        print(available)
+        return available
 
-    def get_all_Profiles(self, me):
-        profiles = Profile.objects.all().exclude(username=me)
+    def get_all_profiles(self, me):
+        profiles = Profile.objects.all().exclude(user=me)
         return profiles
-
-    def all(self):
-        pass
 
 
 class Profile(models.Model):
